@@ -323,9 +323,8 @@ function renderConfig() {
   setHref("mobile-x-link", CONFIG.links.x);
   setHref("mobile-tg-link", CONFIG.links.tg);
   setHref("hero-buy-link", CONFIG.links.dex);
-
-  setHref("community-x-link", CONFIG.links.x);
-  setHref("community-tg-link", CONFIG.links.tg);
+  setHref("join-x-link", CONFIG.links.x);
+  setHref("join-tg-link", CONFIG.links.tg);
 }
 
 renderConfig();

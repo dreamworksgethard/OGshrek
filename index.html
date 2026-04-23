@@ -86,32 +86,26 @@
 
     <main id="main">
       <section class="hero" id="home">
+        <div class="hero__bg" aria-hidden="true"></div>
+
         <div class="container hero__inner">
           <div class="hero__copy">
-            <span class="chip">
-              <span class="chip__dot" aria-hidden="true"></span>
-              Welcome to the swamp
-            </span>
-            <h1 class="hero__title hero__titleWrap">
+            <p class="chip">Welcome to the swamp</p>
+            <h1 class="hero__title">
               <span class="hero__titleTop">Shrek</span>
               <span class="hero__titleBottom">$SHREK</span>
-              <span class="hero__titleDecor" aria-hidden="true">
-                <img class="hero__buddy hero__buddy--donkey" src="./Donkey_(Shrek).png" alt="" />
-                <img class="hero__buddy hero__buddy--shrek" src="./Shrek_(character).png" alt="" />
-              </span>
             </h1>
             <p class="hero__subtitle">
-              The first deployed OG $SHREK — the Shrek meme coin on
-              <strong>Ethereum</strong>. Simple, fun, and built for the swamp.
+              <strong>The first deployed OG $SHREK</strong> — Shrek the meme coin on <strong>ETH</strong>. Simple, fun, and built for the swamp.
             </p>
 
+            <div class="hero-float" aria-hidden="true">
+              <img class="hero-float__shrek" src="./Shrek_(character).png" alt="" />
+              <img class="hero-float__donkey" src="./Donkey_(Shrek).png" alt="" />
+            </div>
+
             <div class="hero__actions">
-              <a class="btn btn--primary btn--lg" href="#chart">
-                <span>Live chart</span>
-                <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M4 19V5M4 19h16M8 15l3-4 3 3 4-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
+              <a class="btn btn--primary btn--lg" href="#chart">Live Chart</a>
               <a
                 class="btn btn--ghost btn--lg"
                 id="hero-buy-link"
@@ -119,34 +113,27 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Buy on Uniswap
-                <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                Buy here (Uniswap)
               </a>
             </div>
 
-            <div class="ca">
+            <div class="ca" data-tilt>
               <span class="ca__label">Contract</span>
               <code class="ca__value" id="ca">0xSHREK...PASTE_YOURS</code>
               <button class="ca__copy" id="copy-ca-inline" type="button" aria-label="Copy contract address">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <rect x="9" y="9" width="11" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
-                  <path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-                <span>Copy</span>
+                Copy
               </button>
             </div>
           </div>
 
           <div class="hero__art" aria-hidden="true">
-            <div class="mascot">
-              <div class="mascot__halo"></div>
-              <div class="mascot__orb">
-                <img class="mascot__logo" src="./Logo.png" alt="" />
+            <div class="card card--art" data-tilt>
+              <div class="logo-orb logo-orb--hero" aria-hidden="true">
+                <img class="logo-orb__img" src="./Logo.png" alt="" />
               </div>
-              <img class="mascot__shrek" src="./Shrek_(character).png" alt="" />
-              <img class="mascot__donkey" src="./Donkey_(Shrek).png" alt="" />
+              <img class="art-peek art-peek--shrek" src="./Shrek_(character).png" alt="" aria-hidden="true" />
+              <img class="art-peek art-peek--donkey" src="./Donkey_(Shrek).png" alt="" aria-hidden="true" />
+              <div class="art__shine"></div>
             </div>
           </div>
         </div>
@@ -321,23 +308,19 @@
         </div>
       </section>
 
-      <section class="section" id="community">
+      <section class="section join" id="community">
         <div class="container">
-          <div class="community card" data-reveal>
-            <div class="community__copy">
-              <p class="section__eyebrow">Join the community</p>
-              <h2 class="community__title">Get in the swamp.</h2>
-              <p class="community__text">
-                Jump into the latest updates, memes, and announcements. Say hi, ask questions, and stay close to the action.
+          <div class="join__card" data-reveal>
+            <div class="join__copy">
+              <p class="section__eyebrow">Join community</p>
+              <h2 class="section__title">Come hang in the swamp.</h2>
+              <p class="join__text">
+                Get updates, memes, and announcements. Follow on X and join the Telegram to stay in the loop.
               </p>
             </div>
-            <div class="community__actions">
-              <a class="btn btn--ghost btn--lg" id="community-x-link" href="#" target="_blank" rel="noopener noreferrer">
-                Join on X
-              </a>
-              <a class="btn btn--primary btn--lg" id="community-tg-link" href="#" target="_blank" rel="noopener noreferrer">
-                Join Telegram
-              </a>
+            <div class="join__actions">
+              <a class="btn btn--ghost" id="join-x-link" href="#" target="_blank" rel="noopener noreferrer">Follow on X</a>
+              <a class="btn btn--primary" id="join-tg-link" href="#" target="_blank" rel="noopener noreferrer">Join Telegram</a>
             </div>
           </div>
         </div>
