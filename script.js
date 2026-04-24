@@ -13,7 +13,7 @@ const CONFIG = {
     dex: "https://app.uniswap.org/#/swap?outputCurrency=0x20Cd3747783E46528a8df2E7cF8056De69C3D7a5",
     chart: "https://dexscreener.com/ethereum/0x20Cd3747783E46528a8df2E7cF8056De69C3D7a5",
     etherscan: "https://etherscan.io/token/0x20Cd3747783E46528a8df2E7cF8056De69C3D7a5",
-    x: "https://x.com/OG_Shrekcoineth",
+    x: "https://x.com/og_shreketh",
     tg: "https://t.me/OG_Shrekcoineth",
   },
 };
